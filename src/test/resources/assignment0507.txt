@@ -1,0 +1,41 @@
+[4:51 PM] Gauri Sameer Mafidar
+
+Those who have done the setup please try these and complete: Day1
+
+ 
+
+1.Write down java code for Students marks calculation.
+
+Declare variables for Objective, handson and totalmark.
+
+Write the method to calculate the total marks. 
+
+Provide the input values and calculate the total marks.
+
+ 
+
+2.Write a code to open www.makemytrip.com
+
+Get Page Title name and Title length
+
+Print Page Title and Title length on the Eclipse Console.
+
+Close the browser.
+
+ like 10
+
+[4:56 PM] Gauri Sameer Mafidar
+
+3. Create selenium web driver script for following:
+
+Open www.Yatra.com
+Select option round trip
+In the “Depart from” field select option as “Pune, India (PNQ)”
+In the “Going to” field select the option as “New Delhi, India (DEL)”
+Select departure date as 14th July and return date as 15th July.
+Search for flights
+Validate if it is diverting to search result page.
+
+ 
+
+ like 3

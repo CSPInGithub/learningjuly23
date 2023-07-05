@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [org.hcl.tests.YatraTest]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="org.hcl.tests.YatraTest">
+        <methods>
+          <include name="testYatra"/>
+        </methods>
+      </class> <!-- org.hcl.tests.YatraTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [org.hcl.tests.YatraTest] -->

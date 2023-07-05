@@ -1,0 +1,14 @@
+-------------------------------------------------------------------------------
+Test set: org.hcl.tests.YatraTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 24.517 sec <<< FAILURE!
+testYatra(org.hcl.tests.YatraTest)  Time elapsed: 23.193 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Yatra.com | Pune to Delhi flights] but found [Yatra.com | Qachas Nek to Delhi flights]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at org.testng.Assert.assertEquals(Assert.java:666)
+	at org.hcl.tests.YatraTest.testYatra(YatraTest.java:53)
+
