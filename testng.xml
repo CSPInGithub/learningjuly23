@@ -4,7 +4,8 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="org.hcl.tests.YatraTest"/>
-      <class name="org.hcl.tests.MakeMyTrip"/>
+      <class name="org.hcl.tests.MakeMyTripTest"/>
+     
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -6,6 +6,8 @@
       <class name="org.hcl.tests.YatraTest">
         <methods>
           <include name="testYatra"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- org.hcl.tests.YatraTest -->
     </classes>

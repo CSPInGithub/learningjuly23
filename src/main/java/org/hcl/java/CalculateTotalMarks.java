@@ -2,7 +2,7 @@ package org.hcl.java;
 
 import java.util.Scanner;
 
-public class Marks {
+public class CalculateTotalMarks {
 
 	/*
 	 * 1.Write down java code for Students marks calculation.

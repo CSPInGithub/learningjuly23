@@ -1,26 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-05T21:31:38 IST" name="org.hcl.tests.YatraTest" finished-at="2023-07-05T21:32:01 IST" duration-ms="23226">
+  <suite started-at="2023-07-06T05:17:54 IST" name="Command line suite" finished-at="2023-07-06T05:18:35 IST" duration-ms="40247">
     <groups>
     </groups>
-    <test started-at="2023-07-05T21:31:38 IST" name="Command line test" finished-at="2023-07-05T21:32:01 IST" duration-ms="23226">
+    <test started-at="2023-07-06T05:17:54 IST" name="Command line test" finished-at="2023-07-06T05:18:35 IST" duration-ms="40247">
       <class name="org.hcl.tests.YatraTest">
-        <test-method signature="testYatra()[pri:0, instance:org.hcl.tests.YatraTest@2b4a2ec7]" started-at="2023-07-05T21:31:38 IST" name="testYatra" finished-at="2023-07-05T21:32:01 IST" duration-ms="23183" status="FAIL">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.hcl.tests.YatraTest@4961f6af]" started-at="2023-07-06T05:18:06 IST" name="setup" finished-at="2023-07-06T05:18:16 IST" duration-ms="10010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testYatra()[pri:0, instance:org.hcl.tests.YatraTest@4961f6af]" started-at="2023-07-06T05:18:16 IST" name="testYatra" finished-at="2023-07-06T05:18:34 IST" duration-ms="18164" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Yatra.com | Pune to Delhi flights] but found [Yatra.com | Qachas Nek to Delhi flights]]]>
+              <![CDATA[expected [Yatra.com | Pun to Delhi flights] but found [Yatra.com | Pune to Delhi flights]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Yatra.com | Pune to Delhi flights] but found [Yatra.com | Qachas Nek to Delhi flights]
+              <![CDATA[java.lang.AssertionError: expected [Yatra.com | Pun to Delhi flights] but found [Yatra.com | Pune to Delhi flights]
 at org.testng.Assert.fail(Assert.java:111)
 at org.testng.Assert.failNotEquals(Assert.java:1578)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
 at org.testng.Assert.assertEquals(Assert.java:666)
-at org.hcl.tests.YatraTest.testYatra(YatraTest.java:53)
+at org.hcl.tests.YatraTest.testYatra(YatraTest.java:43)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -47,7 +51,8 @@ at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
 at org.testng.TestNG.runSuites(TestNG.java:1114)
 at org.testng.TestNG.run(TestNG.java:1082)
 at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:77)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:110)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:159)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:99)
 at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:106)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -64,7 +69,25 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testYatra -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.hcl.tests.YatraTest@4961f6af]" started-at="2023-07-06T05:18:34 IST" name="tearDown" finished-at="2023-07-06T05:18:35 IST" duration-ms="443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- org.hcl.tests.YatraTest -->
+      <class name="org.hcl.tests.MakeMyTripTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.hcl.tests.MakeMyTripTest@394df057]" started-at="2023-07-06T05:17:54 IST" name="setup" finished-at="2023-07-06T05:18:05 IST" duration-ms="10987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testMakeMyTrip()[pri:0, instance:org.hcl.tests.MakeMyTripTest@394df057]" started-at="2023-07-06T05:18:05 IST" name="testMakeMyTrip" finished-at="2023-07-06T05:18:05 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMakeMyTrip -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.hcl.tests.MakeMyTripTest@394df057]" started-at="2023-07-06T05:18:05 IST" name="tearDown" finished-at="2023-07-06T05:18:06 IST" duration-ms="549" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.hcl.tests.MakeMyTripTest -->
     </test> <!-- Command line test -->
-  </suite> <!-- org.hcl.tests.YatraTest -->
+  </suite> <!-- Command line suite -->
 </testng-results>
