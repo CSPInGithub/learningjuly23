@@ -25,40 +25,47 @@ public class YatraTest {
 	@Test
 	public void testYatra() throws InterruptedException {
 
-		ChromeOptions options = new ChromeOptions();
-		options.addArguments("--disable-notifications");
 		
-		WebDriverManager.chromedriver().setup();
-		driver = new ChromeDriver(options);
+		try {
+			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--disable-notifications");
+			
+			WebDriverManager.chromedriver().setup();
+			driver = new ChromeDriver(options);
 
-		driver.manage().window().maximize();
-		driver.get("https://www.yatra.com/");
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		By roundTrip = By.cssSelector(
-				"div[class='trip-type mor-option']>ul[class='selc-flight-options'] li:nth-of-type(2) a[title='Round Trip']");
-		driver.findElement(roundTrip).click();
+			driver.manage().window().maximize();
+			driver.get("https://www.yatra.com/");
+			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			By roundTrip = By.cssSelector(
+					"div[class='trip-type mor-option']>ul[class='selc-flight-options'] li:nth-of-type(2) a[title='Round Trip']");
+			driver.findElement(roundTrip).click();
 
-		TypeInField("label[for='BE_flight_origin_city'] input", " Pune");
+			TypeInField("label[for='BE_flight_origin_city'] input", " Pune");
 
-		driver.findElement(By.xpath("//div[@class='ac_results origin_ac']//li//p")).click();
+			driver.findElement(By.xpath("//div[@class='ac_results origin_ac']//li//p")).click();
 
-		TypeInField("label[for='BE_flight_arrival_city'] input", " New Delhi");
+			TypeInField("label[for='BE_flight_arrival_city'] input", " New Delhi");
 
-		driver.findElement(By.xpath("//div[@class='ac_results dest_ac']//li//p")).click();
+			driver.findElement(By.xpath("//div[@class='ac_results dest_ac']//li//p")).click();
 
-		selectDate("BE_flight_origin_date", "14/07/2023");
-		selectDate("BE_flight_arrival_date", "15/07/2023");
+			selectDate("BE_flight_origin_date", "14/07/2023");
+			selectDate("BE_flight_arrival_date", "15/07/2023");
 
-		By flightFlsearchBtn = By.cssSelector("input[value='Search Flights'][id='BE_flight_flsearch_btn']");
-		driver.findElement(flightFlsearchBtn).click();
+			By flightFlsearchBtn = By.cssSelector("input[value='Search Flights'][id='BE_flight_flsearch_btn']");
+			driver.findElement(flightFlsearchBtn).click();
 
-		String actualSearchpagetitle = driver.getTitle();
+			String actualSearchpagetitle = driver.getTitle();
 
-		Assert.assertEquals(actualSearchpagetitle, "Yatra.com | Pune to Delh flights");
+			Assert.assertEquals(actualSearchpagetitle, "Yatra.com | Pune to Delhi flights");
+			
+		} finally {
+			driver.close();
 
-		driver.close();
+			driver.quit();
+		}
+		
 
-		driver.quit();
+		
 
 	}
 
