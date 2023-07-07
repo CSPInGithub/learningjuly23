@@ -3,6 +3,13 @@
 <suite name="Failed suite [Command line suite]" verbose="0">
   <test thread-count="5" name="Command line test(failed)" verbose="0">
     <classes>
+      <class name="org.hcl.tests.MakeMyTripTest">
+        <methods>
+          <include name="setup"/>
+          <include name="testMakeMyTrip"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- org.hcl.tests.MakeMyTripTest -->
       <class name="org.hcl.tests.YatraTest">
         <methods>
           <include name="testYatra"/>

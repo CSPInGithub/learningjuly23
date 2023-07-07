@@ -1,8 +1,13 @@
 package org.hcl.tests;
 
+import org.hcl.pages.MakeMyTripPage;
 import org.testng.annotations.Test;
 
-public class MakeMyTripTest extends BaseTest {
+public final class MakeMyTripTest extends BaseTest {
+
+	private MakeMyTripTest() {
+		// TODO Auto-generated constructor stub
+	}
 
 	/*
 	 * 2.Write a code to open www.makemytrip.com
@@ -16,16 +21,14 @@ public class MakeMyTripTest extends BaseTest {
 	@Test
 	public void testMakeMyTrip() {
 
+		MakeMyTripPage makeMyTrip = new MakeMyTripPage();
 		
-
-		String title = driver.getTitle();
+		String title = makeMyTrip.openHomePageAndReturnPageTitle("https://www.makemytrip.com/");
 		System.out.println("Page Title name : " + title);
 
 		int titlelength = title.length();
 
 		System.out.println("Page Title length is  : " + titlelength);
-
-		
 
 	}
 
