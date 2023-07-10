@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.hcl.tests.MakeMyTripTest">
+      <class name="org.hcl.tests.MyntraTest">
         <methods>
+          <include name="testMyntra"/>
           <include name="setup"/>
-          <include name="testMakeMyTrip"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- org.hcl.tests.MakeMyTripTest -->
+      </class> <!-- org.hcl.tests.MyntraTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

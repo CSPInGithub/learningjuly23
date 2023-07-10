@@ -1,0 +1,23 @@
+[Yesterday 5:53 PM] Gauri Sameer Mafidar
+
+Day 2 Assignments: 1. Write the code for Polymorphism in Selenium (not in Java polymorphism).
+Ans- mentioned in seleniumAction class
+ 
+
+2. Write the code for Inheritance in Selenium (not in Java inheritance).
+
+ Ans- mentioned in seleniumAction class
+
+3. Write the code for method overloading in Selenium (not in java overloading.)
+Ans- mentioned in seleniumAction class
+ 
+
+4. Write the difference between the navigate() and get() method.
+ Ans- mentioned in seleniumAction class
+
+
+[Yesterday 5:57 PM] Gauri Sameer Mafidar
+
+5. Write the ans : Where do we implement java collections in our framework?
+
+Ans: like extracting all links available in home page using <a> tag and store in list and iterate one by one using for each loop

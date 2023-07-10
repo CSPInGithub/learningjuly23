@@ -1,0 +1,11 @@
+Assignments for today Day3:   
+     
+1. Code for soft assert : condition is last result should be fail
+
+ 
+
+2. Write a single code to automate below:
+   Open https://www.myntra.com/. Do mouse hovering on "MEN" option. You will get the all suboptions, there click on watches.  
+   In the filters under CATEGORIES -- check on Fitness bands. Select any color under the COLOR filter.
+   On the right side you have dropdown "Sort by" -- select the option as Better Discount. Now choose any 
+   watch from the available options and read price and display it in the console of Eclipse.

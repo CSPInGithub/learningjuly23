@@ -6,8 +6,9 @@
 	<test name="seleniumTest" parallel="methods" thread-count="2">
 		<!-- <parameter name="url" value="https://www.makemytrip.com/" /> -->
 		<classes>
-			<class name="org.hcl.tests.MakeMyTripTest" />
-			<class name="org.hcl.tests.YatraTest" />
+			<!--<class name="org.hcl.tests.MakeMyTripTest" />
+			<class name="org.hcl.tests.YatraTest" />-->
+			<class name="org.hcl.tests.MyntraTest" />
 		</classes>
 	</test> <!-- Test -->
 

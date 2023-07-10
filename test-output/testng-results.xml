@@ -1,53 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-06T16:48:33 IST" name="Default suite" finished-at="2023-07-06T16:48:33 IST" duration-ms="71">
+  <suite started-at="2023-07-10T16:17:48 IST" name="Default suite" finished-at="2023-07-10T16:18:28 IST" duration-ms="40634">
     <groups>
     </groups>
-    <test started-at="2023-07-06T16:48:33 IST" name="Default test" finished-at="2023-07-06T16:48:33 IST" duration-ms="71">
-      <class name="org.hcl.tests.TestNGIU">
-        <test-method signature="A2()[pri:0, instance:org.hcl.tests.TestNGIU@5119fb47]" started-at="2023-07-06T16:48:33 IST" name="A2" finished-at="2023-07-06T16:48:33 IST" duration-ms="11" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- A2 -->
-        <test-method signature="M4()[pri:0, instance:org.hcl.tests.TestNGIU@5119fb47]" started-at="2023-07-06T16:48:33 IST" name="M4" finished-at="2023-07-06T16:48:33 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- M4 -->
-        <test-method signature="M3()[pri:1, instance:org.hcl.tests.TestNGIU@5119fb47]" started-at="2023-07-06T16:48:33 IST" name="M3" finished-at="2023-07-06T16:48:33 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- M3 -->
-        <test-method signature="M1()[pri:10, instance:org.hcl.tests.TestNGIU@5119fb47]" started-at="2023-07-06T16:48:33 IST" name="M1" finished-at="2023-07-06T16:48:33 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- M1 -->
-      </class> <!-- org.hcl.tests.TestNGIU -->
-=======
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2023-07-06T12:05:05 IST" name="Default suite" finished-at="2023-07-06T12:05:17 IST" duration-ms="11689">
-    <groups>
-    </groups>
-    <test started-at="2023-07-06T12:05:05 IST" name="Default test" finished-at="2023-07-06T12:05:17 IST" duration-ms="11689">
-      <class name="org.hcl.tests.MakeMyTripTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:org.hcl.tests.MakeMyTripTest@4d154ccd]" started-at="2023-07-06T12:05:05 IST" name="setup" finished-at="2023-07-06T12:05:09 IST" duration-ms="3698" status="PASS">
+    <test started-at="2023-07-10T16:17:48 IST" name="Default test" finished-at="2023-07-10T16:18:28 IST" duration-ms="40634">
+      <class name="org.hcl.tests.MyntraTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:org.hcl.tests.MyntraTest@647e447]" started-at="2023-07-10T16:17:48 IST" name="setup" finished-at="2023-07-10T16:17:58 IST" duration-ms="9916" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testMakeMyTrip()[pri:0, instance:org.hcl.tests.MakeMyTripTest@4d154ccd]" started-at="2023-07-06T12:05:09 IST" name="testMakeMyTrip" finished-at="2023-07-06T12:05:16 IST" duration-ms="7369" status="PASS">
+        <test-method signature="testMyntra()[pri:0, instance:org.hcl.tests.MyntraTest@647e447]" started-at="2023-07-10T16:17:58 IST" name="testMyntra" finished-at="2023-07-10T16:18:27 IST" duration-ms="29085" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMakeMyTrip -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.hcl.tests.MakeMyTripTest@4d154ccd]" started-at="2023-07-06T12:05:16 IST" name="tearDown" finished-at="2023-07-06T12:05:17 IST" duration-ms="536" status="PASS">
+        </test-method> <!-- testMyntra -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.hcl.tests.MyntraTest@647e447]" started-at="2023-07-10T16:18:27 IST" name="tearDown" finished-at="2023-07-10T16:18:28 IST" duration-ms="1600" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- org.hcl.tests.MakeMyTripTest -->
->>>>>>> db0f6ac072b904297efcaefcdde666c47b8929ce
+      </class> <!-- org.hcl.tests.MyntraTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

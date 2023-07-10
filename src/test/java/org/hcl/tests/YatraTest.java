@@ -1,8 +1,6 @@
 package org.hcl.tests;
 
-import org.hcl.driver.Driver;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import org.hcl.pages.YatraPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -19,59 +17,16 @@ public final class YatraTest extends BaseTest {
 		// TODO Auto-generated constructor stub
 	}
 
-	
 	@Test
 	public void testYatra() throws InterruptedException {
+
+		YatraPage yatra = new YatraPage();
+		yatra.openHomePage("https://www.yatra.com/");
+		yatra.selectTrip();
+		yatra.selectToAndFrom();
+		yatra.selectDateForJourney("14/07/2023", "15/07/2023");
+		Assert.assertEquals(yatra.searchResults(), "Yatra.com | Pune to Delhi flights");
 		
-		By roundTrip = By.cssSelector(
-				"div[class='trip-type mor-option']>ul[class='selc-flight-options'] li:nth-of-type(2) a[title='Round Trip']");
-		Driver.driver.findElement(roundTrip).click();
-
-		TypeInField("label[for='BE_flight_origin_city'] input", " Pune");
-
-		Driver.driver.findElement(By.xpath("//div[@class='ac_results origin_ac']//li//p")).click();
-
-		TypeInField("label[for='BE_flight_arrival_city'] input", " New Delhi");
-
-		Driver.driver.findElement(By.xpath("//div[@class='ac_results dest_ac']//li//p")).click();
-
-		selectDate("BE_flight_origin_date", "14/07/2023");
-		selectDate("BE_flight_arrival_date", "15/07/2023");
-
-		By flightFlsearchBtn = By.cssSelector("input[value='Search Flights'][id='BE_flight_flsearch_btn']");
-		Driver.driver.findElement(flightFlsearchBtn).click();
-
-		String actualSearchpagetitle = Driver.driver.getTitle();
-
-		Assert.assertEquals(actualSearchpagetitle, "Yatra.com | Pune to Delhi flights");
-
-	}
-
-	public void TypeInField(String css, String value) throws InterruptedException {
-		String val = value;
-		WebElement element = Driver.driver.findElement(By.cssSelector(css));
-		element.click();
-
-		for (int i = 0; i < val.length(); i++) {
-			char c = val.charAt(i);
-			String s = new StringBuilder().append(c).toString();
-			element.sendKeys(s);
-			Thread.sleep(100);
-
-		}
-	}
-
-	public void selectDate(String cFORss, String value) throws InterruptedException {
-
-		String label = String.format("label[for='%s']", cFORss);
-		WebElement element1 = Driver.driver.findElement(By.cssSelector(label));
-		element1.click();
-
-		String bycss = String.format("tbody[class='%s'] td[id='%s']", cFORss, value);
-
-		WebElement element = Driver.driver.findElement(By.cssSelector(bycss));
-
-		element.click();
 	}
 
 }
