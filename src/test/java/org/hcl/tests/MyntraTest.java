@@ -35,17 +35,21 @@ public class MyntraTest extends BaseTest {
 	public void testSoftAssertion() throws InterruptedException {
 
 		MyntraPage myntra = new MyntraPage();
+		SoftAssert softAssert = new SoftAssert();
 		myntra.openHomePage("https://www.myntra.com/");
 		myntra.selectsubOptionsFromMenMenu("/mens-watches");
 
 		myntra.selectFilterTypeAndValue("Categories", "Fitness Bands");
-		SoftAssert softAssert = new SoftAssert();
+		myntra.selectFilterTypeAndValue("Color", "Black");
 
-		softAssert.assertEquals(myntra.sortItems("discount"),
+		String url =  myntra.sortItems("discount");
+		
+
+		softAssert.assertEquals(url,
 				"https://www.myntra.com/mens-watches?f=Categories%3AFitness%20Bands&sort=recommended",
 				"url is not Matching");
-
-		softAssert.assertEquals(myntra.readPriceAndDisplayOfItem("nuband"), "₹2399", "price is not Matching");
+		String price = myntra.readPriceAndDisplayOfItem("nuband");
+		softAssert.assertEquals(price, "₹2399", "price is not Matching");
 		softAssert.assertAll();
 
 	}

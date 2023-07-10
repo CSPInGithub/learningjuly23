@@ -5,8 +5,8 @@
     <classes>
       <class name="org.hcl.tests.MyntraTest">
         <methods>
-          <include name="testMyntra"/>
           <include name="setup"/>
+          <include name="testSoftAssertion"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- org.hcl.tests.MyntraTest -->
