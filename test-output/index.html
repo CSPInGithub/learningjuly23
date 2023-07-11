@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -51,12 +51,12 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Users\chandrashekhar_pande\eclipse-workspace\seleniumtrng\testng.xml</span>
+                    <span>C:\Users\chandrashekhar_pande\eclipse-workspace\seleniumtrng\testngAll.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">2 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 2 failed,   </span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,15 +104,39 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="org.hcl.tests.SSLTest" class="method navigator-link" hash-for-method="verifySSL(Your connection is not private)">verifySSL(Your connection is not private)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="org.hcl.tests.SSLTest" class="method navigator-link" hash-for-method="verifySSL(Your connection isn&#039;t private)">verifySSL(Your connection isn't private)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="org.hcl.tests.MyntraTest" class="method navigator-link" hash-for-method="testSoftAssertion">testSoftAssertion</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.hcl.tests.MakeMyTripTest" class="method navigator-link" hash-for-method="testMakeMyTrip">testMakeMyTrip</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.hcl.tests.MyntraTest" class="method navigator-link" hash-for-method="testMyntra">testMyntra</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.hcl.tests.YatraTest" class="method navigator-link" hash-for-method="testYatra">testYatra</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.hcl.tests.AlertTest" class="method navigator-link" hash-for-method="verifyJSAlert">verifyJSAlert</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -127,34 +151,18 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">org.hcl.tests.SSLTest</span>
+              <span class="class-name">org.hcl.tests.MyntraTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifySSL(Your connection is not private)">
-                  </a> <!-- verifySSL(Your connection is not private) -->
-                  <span class="method-name">verifySSL</span>
-                  <span class="parameters">(Your connection is not private)</span>
+                  <a name="testSoftAssertion">
+                  </a> <!-- testSoftAssertion -->
+                  <span class="method-name">testSoftAssertion</span>
                   <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	title not matching.... expected [Privacy error] but found [Welcome to CAcert.org]
-	at org.hcl.tests.SSLTest.verifySSL(SSLTest.java:21)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifySSL(Your connection isn&#039;t private)">
-                  </a> <!-- verifySSL(Your connection isn't private) -->
-                  <span class="method-name">verifySSL</span>
-                  <span class="parameters">(Your connection isn't private)</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	title not matching.... expected [Privacy error] but found [Welcome to CAcert.org]
-	at org.hcl.tests.SSLTest.verifySSL(SSLTest.java:21)
+	url is not Matching expected [https://www.myntra.com/mens-watches?f=Categories%3AFitness%20Bands&amp;sort=recommended] but found [https://www.myntra.com/mens-watches?f=Categories%3AFitness%20Bands%3A%3AColor%3ABlack_36454f&amp;sort=discount],
+	price is not Matching expected [₹2399] but found [₹1399]
+	at org.hcl.tests.MyntraTest.testSoftAssertion(MyntraTest.java:53)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
@@ -164,30 +172,86 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.hcl.tests.MakeMyTripTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMakeMyTrip">
+                  </a> <!-- testMakeMyTrip -->
+                  <span class="method-name">testMakeMyTrip</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.hcl.tests.YatraTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testYatra">
+                  </a> <!-- testYatra -->
+                  <span class="method-name">testYatra</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.hcl.tests.MyntraTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testMyntra">
+                  </a> <!-- testMyntra -->
+                  <span class="method-name">testMyntra</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.hcl.tests.AlertTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyJSAlert">
+                  </a> <!-- verifyJSAlert -->
+                  <span class="method-name">verifyJSAlert</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\chandrashekhar_pande\eclipse-workspace\seleniumtrng\testng.xml</span>
+            <span class="header-content">C:\Users\chandrashekhar_pande\eclipse-workspace\seleniumtrng\testngAll.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;methods&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;TestChrome&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;6&quot; parallel=&quot;methods&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
     &lt;parameter name=&quot;mainmssg&quot; value=&quot;Your connection is not private&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;org.hcl.tests.SSLTest&quot;/&gt;
+      &lt;class name=&quot;org.hcl.tests.MyntraTest&quot;/&gt;
+      &lt;class name=&quot;org.hcl.tests.YatraTest&quot;/&gt;
+      &lt;class name=&quot;org.hcl.tests.AlertTest&quot;/&gt;
+      &lt;class name=&quot;org.hcl.tests.MakeMyTripTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestChrome --&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;methods&quot; name=&quot;TestEdge&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
-    &lt;parameter name=&quot;mainmssg&quot; value=&quot;Your connection isn&amp;#039;t private&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;org.hcl.tests.SSLTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- TestEdge --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -199,10 +263,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TestChrome (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">TestEdge (1 class)</span>
+                <span class="test-name">Test (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -228,20 +289,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifySSL')
-data.setCell(0, 2, 'org.hcl.tests.SSLTest')
-data.setCell(0, 3, 4177);
+data.setCell(0, 1, 'testMyntra')
+data.setCell(0, 2, 'org.hcl.tests.MyntraTest')
+data.setCell(0, 3, 79440);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifySSL')
-data.setCell(1, 2, 'org.hcl.tests.SSLTest')
-data.setCell(1, 3, 2595);
+data.setCell(1, 1, 'testSoftAssertion')
+data.setCell(1, 2, 'org.hcl.tests.MyntraTest')
+data.setCell(1, 3, 65337);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testYatra')
+data.setCell(2, 2, 'org.hcl.tests.YatraTest')
+data.setCell(2, 3, 43965);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testMakeMyTrip')
+data.setCell(3, 2, 'org.hcl.tests.MakeMyTripTest')
+data.setCell(3, 3, 27684);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyJSAlert')
+data.setCell(4, 2, 'org.hcl.tests.AlertTest')
+data.setCell(4, 3, 22996);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -267,34 +340,104 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">org.hcl.tests.SSLTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(chrome)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">verifySSL(Your connection is not private)</span>
-                <span class="method-start">9162 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">13343 ms</span>
-              </div> <!-- configuration-method after -->
+              <div class="chronological-class-name">org.hcl.tests.MakeMyTripTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup(edge)</span>
-                <span class="method-start">14209 ms</span>
+                <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.hcl.tests.MyntraTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(edge)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.hcl.tests.AlertTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(edge)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.hcl.tests.MyntraTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(edge)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.hcl.tests.YatraTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(edge)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.hcl.tests.AlertTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyJSAlert</span>
+                <span class="method-start">23691 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.hcl.tests.MyntraTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testMyntra</span>
+                <span class="method-start">41016 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">verifySSL(Your connection isn't private)</span>
-                <span class="method-start">24058 ms</span>
+                <span class="method-name">testSoftAssertion</span>
+                <span class="method-start">41877 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.hcl.tests.MakeMyTripTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testMakeMyTrip</span>
+                <span class="method-start">41961 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.hcl.tests.YatraTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testYatra</span>
+                <span class="method-start">43531 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.hcl.tests.AlertTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">26657 ms</span>
+                <span class="method-start">46691 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.hcl.tests.MakeMyTripTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">69648 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.hcl.tests.YatraTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">87498 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.hcl.tests.MyntraTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">107220 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">120460 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

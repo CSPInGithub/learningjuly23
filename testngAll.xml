@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="6" name="Test" parallel="methods">
+		<parameter name="browser" value="edge" />
+		<parameter name="mainmssg" value="Your connection is not private" />
+		<classes>
+			<class name="org.hcl.tests.MyntraTest" />
+			<class name="org.hcl.tests.YatraTest" />
+			<class name="org.hcl.tests.AlertTest" />
+			<class name="org.hcl.tests.MakeMyTripTest" />
+
+
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
