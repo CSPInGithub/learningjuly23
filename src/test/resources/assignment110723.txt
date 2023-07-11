@@ -1,0 +1,4 @@
+Assignments for today: 
+1. SSL certificate code for site https://cacert.org for microsoft edge browser and IE browser    
+           
+2. Write the codes for all three alerts present on http://the-internet.herokuapp.com/javascript_alerts

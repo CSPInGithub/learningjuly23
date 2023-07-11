@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Set;
 
 import org.hcl.driver.Driver;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -30,6 +31,10 @@ public class SeleniumAction extends RemoteWebDriver {
 	/* overloading within class */
 	protected void click(By by) {
 		getElement(by).click();
+	}
+
+	protected String getText(By by) {
+		return getElement(by).getText();
 	}
 
 	protected void jsClick(By by) {
@@ -91,8 +96,36 @@ public class SeleniumAction extends RemoteWebDriver {
 
 	}
 
+	protected void alert(String alertType,String text) {
+		Alert alertObj = Driver.getDriver().switchTo().alert();
+		switch (alertType) {
+		case "simpleAlert":
+
+			alertObj.accept();
+
+			break;
+		case "promptAlert":
+
+			alertObj.sendKeys(text);
+			alertObj.accept();
+
+			break;
+		case "confirmationAlert":
+
+			String alertText = alertObj.getText();
+			System.out.println("Alert text is " + alertText);
+			alertObj.dismiss();
+
+			break;
+		default:
+			System.out.println("incorrect alertypr provided,pls chek again");
+			break;
+		}
+
+	}
+
 	/*------------------------*/
-	protected void TypeInField(String css, String value) throws InterruptedException {
+	protected void typeInField(String css, String value) throws InterruptedException {
 		String val = value;
 		WebElement element = Driver.getDriver().findElement(By.cssSelector(css));
 		element.click();

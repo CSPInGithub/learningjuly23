@@ -38,7 +38,7 @@ public final class Driver {
 	public static void initDriver() {
 		if (Objects.isNull(getDriver())) {
 			EdgeOptions options = new EdgeOptions();
-			options.addArguments("--disable-notifications");
+			//options.addArguments("--disable-notifications");
 
 			// WebDriverManager.chromedriver().setup();
 			driver = new EdgeDriver(options);

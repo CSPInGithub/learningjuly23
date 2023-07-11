@@ -29,9 +29,9 @@ public class YatraPage extends SeleniumAction {
 	}
 
 	public void selectToAndFrom() throws InterruptedException {
-		TypeInField("label[for='BE_flight_origin_city'] input", " Pune");
+		typeInField("label[for='BE_flight_origin_city'] input", " Pune");
 		click(originresults);
-		TypeInField("label[for='BE_flight_arrival_city'] input", " New Delhi");
+		typeInField("label[for='BE_flight_arrival_city'] input", " New Delhi");
 		click(destinationresults);
 	}
 

@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jul 10 16:55:09 IST 2023</td>
+<td>Started on:</td><td>Tue Jul 11 11:26:17 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>34 seconds (34501 ms)</td>
+<tr><td>Total time:</td><td>12 seconds (12562 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,13 +75,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='org.hcl.tests.MyntraTest.testSoftAssertion()'><b>testSoftAssertion</b><br>Test class: org.hcl.tests.MyntraTest</td>
-<td><div><pre>java.lang.AssertionError: The following asserts failed:
-	url is not Matching expected [https://www.myntra.com/mens-watches?f=Categories%3AFitness%20Bands&amp;sort=recommended] but found [https://www.myntra.com/mens-watches?f=Categories%3AFitness%20Bands%3A%3AColor%3ABlack_36454f&amp;sort=discount],
-	price is not Matching expected [₹2399] but found [₹1399]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at org.hcl.tests.MyntraTest.testSoftAssertion(MyntraTest.java:53)
+<td title='org.hcl.tests.AlertTest.verifyJSAlert()'><b>verifyJSAlert</b><br>Test class: org.hcl.tests.AlertTest</td>
+<td><div><pre>java.lang.AssertionError: expected [You entered: test prompt1] but found [You entered: test prompt]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at org.hcl.tests.AlertTest.verifyJSAlert(AlertTest.java:21)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -110,13 +112,15 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1529842358", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1529842358'><pre>java.lang.AssertionError: The following asserts failed:
-	url is not Matching expected [https://www.myntra.com/mens-watches?f=Categories%3AFitness%20Bands&amp;sort=recommended] but found [https://www.myntra.com/mens-watches?f=Categories%3AFitness%20Bands%3A%3AColor%3ABlack_36454f&amp;sort=discount],
-	price is not Matching expected [₹2399] but found [₹1399]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-	at org.hcl.tests.MyntraTest.testSoftAssertion(MyntraTest.java:53)
+</pre></div><a href='#' onClick='toggleBox("stack-trace726416425", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace726416425'><pre>java.lang.AssertionError: expected [You entered: test prompt1] but found [You entered: test prompt]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at org.hcl.tests.AlertTest.verifyJSAlert(AlertTest.java:21)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -146,8 +150,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>24</td>
-<td>org.hcl.tests.MyntraTest@647e447</td></tr>
+<td>2</td>
+<td>org.hcl.tests.AlertTest@3427b02d</td></tr>
 </table><p>
 </body>
 </html>
