@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="org.hcl.tests.YatraTest">
+      <class name="org.hcl.tests.AlertTest">
         <methods>
-          <include name="testYatra"/>
+          <include name="verifyJSAlert"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- org.hcl.tests.YatraTest -->
+      </class> <!-- org.hcl.tests.AlertTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
