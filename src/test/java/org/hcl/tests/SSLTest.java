@@ -12,12 +12,12 @@ public class SSLTest extends BaseTest {
 	public void verifySSL(String mainmssg) {
 
 		SSLPage sslpage = new SSLPage();
-		//String actualTitle = sslpage.openSSLTestPage("https://cacert.org/");
-		//String actualMessage = sslpage.getMainMessage();
+		String actualTitle = sslpage.openSSLTestPage("https://cacert.org/");
+		String actualMessage = sslpage.getMainMessage();
 
 		SoftAssert softAssert = new SoftAssert();
-		//softAssert.assertEquals(actualTitle, "Privacy error", "title not matching....");
-		//softAssert.assertEquals(actualMessage, mainmssg, "mssg not matching...");
+		softAssert.assertEquals(actualTitle, "Privacy error", "title not matching....");
+		softAssert.assertEquals(actualMessage, mainmssg, "mssg not matching...");
 		softAssert.assertAll();
 
 	}
