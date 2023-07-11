@@ -9,14 +9,26 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">TestChrome</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,167</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">TestEdge</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">11,608</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">23,775</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">TestChrome</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">14,094</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">TestEdge</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">13,089</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">27,183</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestChrome &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.hcl.tests.SSLTest</td><td><a href="#m0">verifySSL</a></td><td rowspan="1">1689058381478</td><td rowspan="1">1801</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">TestEdge &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.hcl.tests.SSLTest</td><td><a href="#m1">verifySSL</a></td><td rowspan="1">1689058393310</td><td rowspan="1">1620</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestChrome &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">org.hcl.tests.SSLTest</td><td><a href="#m0">verifySSL</a></td><td rowspan="1">1689069597368</td><td rowspan="1">4177</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">TestEdge &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">org.hcl.tests.SSLTest</td><td><a href="#m1">verifySSL</a></td><td rowspan="1">1689069612264</td><td rowspan="1">2595</td></tr></tbody>
 </table>
-<h2>TestChrome</h2><h3 id="m0">org.hcl.tests.SSLTest#verifySSL</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Your connection is not private</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>TestEdge</h2><h3 id="m1">org.hcl.tests.SSLTest#verifySSL</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Your connection isn&apos;t private</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestChrome</h2><h3 id="m0">org.hcl.tests.SSLTest#verifySSL</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Your connection is not private</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	title not matching.... expected [Privacy error] but found [Welcome to CAcert.org]
+	at org.hcl.tests.SSLTest.verifySSL(SSLTest.java:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestEdge</h2><h3 id="m1">org.hcl.tests.SSLTest#verifySSL</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>Your connection isn&apos;t private</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	title not matching.... expected [Privacy error] but found [Welcome to CAcert.org]
+	at org.hcl.tests.SSLTest.verifySSL(SSLTest.java:21)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+... Removed 14 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

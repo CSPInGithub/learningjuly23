@@ -43,12 +43,14 @@ public final class Driver {
 			case "chrome":
 				ChromeOptions chromeOption = new ChromeOptions();
 				chromeOption.addArguments("--disable-notifications");
+				chromeOption.addArguments("--ignore-certificate-errors");
 				driver = new ChromeDriver(chromeOption);
 
 				break;
 			case "edge":
 				EdgeOptions edgeOption = new EdgeOptions();
 				edgeOption.addArguments("--disable-notifications");
+				edgeOption.addArguments("--ignore-certificate-errors");
 				driver = new EdgeDriver(edgeOption);
 
 				break;
