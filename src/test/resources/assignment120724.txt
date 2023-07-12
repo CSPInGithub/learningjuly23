@@ -13,5 +13,7 @@ http://seleniumpractise.blogspot.com/2016/08/how-to-handle-calendar-in-selenium.
 
  
 
-4. Select the checkbox 'I have a boat'. Find the number of checkboxes present. Check if the checkbox 'I have a car' is checked already, if no then 
+4. Select the checkbox 'I have a boat'. 
+Find the number of checkboxes present.
+ Check if the checkbox 'I have a car' is checked already, if no then 
    check on it.
