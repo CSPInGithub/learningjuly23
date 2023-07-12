@@ -9,11 +9,6 @@ http://seleniumpractise.blogspot.com/2016/08/how-to-handle-calendar-in-selenium.
 
  
 
-
-
- 
-
-
 3. In radio button html file: display all the buttons txt label on the console.
 
  
