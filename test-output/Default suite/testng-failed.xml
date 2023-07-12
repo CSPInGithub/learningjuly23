@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.hcl.tests.YatraTest">
+      <class name="org.hcl.tests.CalenderTest">
         <methods>
-          <include name="testYatra"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="testDate"/>
         </methods>
-      </class> <!-- org.hcl.tests.YatraTest -->
+      </class> <!-- org.hcl.tests.CalenderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

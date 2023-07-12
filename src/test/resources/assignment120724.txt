@@ -1,0 +1,22 @@
+Assignments- for Day5_today :   
+1.Write the code to select the current date (Today's date) from the calendar available from the link                                                                                                                                           1. Write the code to select the current date (Today's date) from the calendar available from the link
+http://seleniumpractise.blogspot.com/2016/08/how-to-handle-calendar-in-selenium.html
+
+ 
+5. Select you birthdate from the calendar http://seleniumpractise.blogspot.com/2016/08/how-to-handle-calendar-in-selenium.html.  
+
+2. Open Amazon.com --- mouse hover on Account and Lists -- Select any option from dropdown
+
+ 
+
+
+
+ 
+
+
+3. In radio button html file: display all the buttons txt label on the console.
+
+ 
+
+4. Select the checkbox 'I have a boat'. Find the number of checkboxes present. Check if the checkbox 'I have a car' is checked already, if no then 
+   check on it.

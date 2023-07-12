@@ -24,7 +24,7 @@ public class YatraPage extends SeleniumAction {
 
 	public void openHomePage(String url) {
 
-		get(url);
+		getURL(url);
 
 	}
 

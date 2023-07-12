@@ -10,11 +10,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class SeleniumAction extends RemoteWebDriver {
+public class SeleniumAction {
 
 	/* inheritance */
 
@@ -45,6 +44,10 @@ public class SeleniumAction extends RemoteWebDriver {
 
 	}
 
+	protected String getTitle() {
+		return Driver.driver.getTitle();
+	}
+
 	protected void executeJsScript(String script) {
 
 		JavascriptExecutor executor = (JavascriptExecutor) Driver.getDriver();
@@ -70,18 +73,16 @@ public class SeleniumAction extends RemoteWebDriver {
 	 * If the overridden method is public, then the overriding one must be only
 	 * public.
 	 */
-	@Override
-	public void get(String url) {
-		Driver.getDriver().navigate().to(url);
-		// Write the difference between the navigate() and get() method.
-		// it has other methods as well like refresh,back and forward
-	}
-
-	@Override
-	public String getTitle() {
-		return Driver.getDriver().getTitle();
-
-	}
+	/*
+	 * @Override public void get(String url) {
+	 * Driver.getDriver().navigate().to(url); // Write the difference between the
+	 * navigate() and get() method. // it has other methods as well like
+	 * refresh,back and forward }
+	 * 
+	 * @Override public String getTitle() { return Driver.getDriver().getTitle();
+	 * 
+	 * }
+	 */
 
 	protected void hoverTo(By by) {
 
@@ -96,7 +97,7 @@ public class SeleniumAction extends RemoteWebDriver {
 
 	}
 
-	protected void alert(String alertType,String text) {
+	protected void alert(String alertType, String text) {
 		Alert alertObj = Driver.getDriver().switchTo().alert();
 		switch (alertType) {
 		case "simpleAlert":
@@ -165,6 +166,12 @@ public class SeleniumAction extends RemoteWebDriver {
 			}
 
 		}
+
+	}
+
+	protected List<WebElement> getListOfItems(By by) {
+
+		return Driver.getDriver().findElements(by);
 
 	}
 

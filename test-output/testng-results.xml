@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-11T17:28:28 IST" name="Suite" finished-at="2023-07-11T17:30:31 IST" duration-ms="123087">
+  <suite started-at="2023-07-12T13:11:49 IST" name="Suite" finished-at="2023-07-12T13:12:32 IST" duration-ms="43516">
     <groups>
     </groups>
-    <test started-at="2023-07-11T17:28:28 IST" name="Test" finished-at="2023-07-11T17:30:31 IST" duration-ms="123087">
-      <class name="org.hcl.tests.YatraTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.hcl.tests.YatraTest@47af7f3d]" started-at="2023-07-11T17:28:28 IST" name="setup" finished-at="2023-07-11T17:29:12 IST" duration-ms="43531" status="PASS">
+    <test started-at="2023-07-12T13:11:49 IST" name="Test" finished-at="2023-07-12T13:12:32 IST" duration-ms="43516">
+      <class name="org.hcl.tests.CalenderTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.hcl.tests.CalenderTest@3c407114]" started-at="2023-07-12T13:11:49 IST" name="setup" finished-at="2023-07-12T13:11:58 IST" duration-ms="9000" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,17 +18,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testYatra()[pri:0, instance:org.hcl.tests.YatraTest@47af7f3d]" started-at="2023-07-11T17:29:12 IST" name="testYatra" finished-at="2023-07-11T17:29:56 IST" duration-ms="43965" status="PASS">
+        <test-method signature="verfiySelctionCurrentdate()[pri:0, instance:org.hcl.tests.CalenderTest@3c407114]" started-at="2023-07-12T13:11:58 IST" name="verfiySelctionCurrentdate" finished-at="2023-07-12T13:12:08 IST" duration-ms="10151" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testYatra -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.hcl.tests.YatraTest@47af7f3d]" started-at="2023-07-11T17:29:56 IST" name="tearDown" finished-at="2023-07-11T17:29:59 IST" duration-ms="3352" status="PASS">
+        </test-method> <!-- verfiySelctionCurrentdate -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.hcl.tests.CalenderTest@3c407114]" started-at="2023-07-12T13:12:08 IST" name="tearDown" finished-at="2023-07-12T13:12:08 IST" duration-ms="630" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- org.hcl.tests.YatraTest -->
-      <class name="org.hcl.tests.MakeMyTripTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.hcl.tests.MakeMyTripTest@3bb9a3ff]" started-at="2023-07-11T17:28:28 IST" name="setup" finished-at="2023-07-11T17:29:10 IST" duration-ms="41961" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.hcl.tests.CalenderTest@3c407114]" started-at="2023-07-12T13:12:08 IST" name="setup" finished-at="2023-07-12T13:12:16 IST" duration-ms="7792" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -39,107 +37,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="testMakeMyTrip()[pri:0, instance:org.hcl.tests.MakeMyTripTest@3bb9a3ff]" started-at="2023-07-11T17:29:10 IST" name="testMakeMyTrip" finished-at="2023-07-11T17:29:38 IST" duration-ms="27684" status="PASS">
+        <test-method signature="verfiySelctionDynanicdate()[pri:0, instance:org.hcl.tests.CalenderTest@3c407114]" started-at="2023-07-12T13:12:16 IST" name="verfiySelctionDynanicdate" finished-at="2023-07-12T13:12:31 IST" duration-ms="15106" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMakeMyTrip -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.hcl.tests.MakeMyTripTest@3bb9a3ff]" started-at="2023-07-11T17:29:38 IST" name="tearDown" finished-at="2023-07-11T17:29:50 IST" duration-ms="12237" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- org.hcl.tests.MakeMyTripTest -->
-      <class name="org.hcl.tests.AlertTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.hcl.tests.AlertTest@7c729a55]" started-at="2023-07-11T17:28:28 IST" name="setup" finished-at="2023-07-11T17:28:52 IST" duration-ms="23689" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyJSAlert()[pri:0, instance:org.hcl.tests.AlertTest@7c729a55]" started-at="2023-07-11T17:28:52 IST" name="verifyJSAlert" finished-at="2023-07-11T17:29:15 IST" duration-ms="22996" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyJSAlert -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.hcl.tests.AlertTest@7c729a55]" started-at="2023-07-11T17:29:15 IST" name="tearDown" finished-at="2023-07-11T17:29:32 IST" duration-ms="17245" status="PASS">
+        </test-method> <!-- verfiySelctionDynanicdate -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.hcl.tests.CalenderTest@3c407114]" started-at="2023-07-12T13:12:31 IST" name="tearDown" finished-at="2023-07-12T13:12:32 IST" duration-ms="807" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- org.hcl.tests.AlertTest -->
-      <class name="org.hcl.tests.MyntraTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.hcl.tests.MyntraTest@708f5957]" started-at="2023-07-11T17:28:28 IST" name="setup" finished-at="2023-07-11T17:29:09 IST" duration-ms="41016" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.hcl.tests.MyntraTest@708f5957]" started-at="2023-07-11T17:28:28 IST" name="setup" finished-at="2023-07-11T17:29:10 IST" duration-ms="41877" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testMyntra()[pri:0, instance:org.hcl.tests.MyntraTest@708f5957]" started-at="2023-07-11T17:29:09 IST" name="testMyntra" finished-at="2023-07-11T17:30:29 IST" duration-ms="79440" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMyntra -->
-        <test-method signature="testSoftAssertion()[pri:0, instance:org.hcl.tests.MyntraTest@708f5957]" started-at="2023-07-11T17:29:10 IST" name="testSoftAssertion" finished-at="2023-07-11T17:30:15 IST" duration-ms="65337" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-url is not Matching expected [https://www.myntra.com/mens-watches?f=Categories%3AFitness%20Bands&sort=recommended] but found [https://www.myntra.com/mens-watches?f=Categories%3AFitness%20Bands%3A%3AColor%3ABlack_36454f&sort=discount],
-price is not Matching expected [₹2399] but found [₹1399]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-url is not Matching expected [https://www.myntra.com/mens-watches?f=Categories%3AFitness%20Bands&sort=recommended] but found [https://www.myntra.com/mens-watches?f=Categories%3AFitness%20Bands%3A%3AColor%3ABlack_36454f&sort=discount],
-price is not Matching expected [₹2399] but found [₹1399]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:47)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:31)
-at org.hcl.tests.MyntraTest.testSoftAssertion(MyntraTest.java:53)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-at java.base/java.lang.Thread.run(Thread.java:833)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSoftAssertion -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.hcl.tests.MyntraTest@708f5957]" started-at="2023-07-11T17:30:15 IST" name="tearDown" finished-at="2023-07-11T17:30:18 IST" duration-ms="2920" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.hcl.tests.MyntraTest@708f5957]" started-at="2023-07-11T17:30:29 IST" name="tearDown" finished-at="2023-07-11T17:30:31 IST" duration-ms="2591" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- org.hcl.tests.MyntraTest -->
+      </class> <!-- org.hcl.tests.CalenderTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
