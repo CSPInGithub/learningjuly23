@@ -1,0 +1,15 @@
+1. Open https://www.selenium.dev/ and validate the text available on the page. (Any para you may take for validation)
+
+ 
+
+2. Write the code to find the duplicate entries from the data excel sheet and remove it.
+
+ 
+
+3. Open the multiple windows in the browser. Write a script to close all the browsers without using quit() method.
+
+ 
+
+4. Open https://www.ebay.com/. In shop by catagory search, using dropdown select the option as books.Click on search.
+   Result will be displayed below. Click on books option and new result will be shown. 
+   Write a method to print all products from 1st page.
