@@ -2,6 +2,7 @@ package org.hcl.pages;
 
 import java.util.List;
 
+import org.hcl.driver.Driver;
 import org.hcl.utility.SeleniumAction;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -60,20 +61,28 @@ public final class AmazonPage extends SeleniumAction {
 
 	}
 
+	public String getPageSrc() {
+
+		return getPageSource();
+
+	}
+
 	public void multipleWindowshandle() {
+		//main handle
+		String parentTabhandle = Driver.getDriver().getWindowHandle();
 		System.out.println(getTitle());
 		click(ElementalSeleiumLink);
 
-		switchToNewTab();
+		switchToNewTab(parentTabhandle);
 
 		System.out.println(getTitle());
 		click(seleniumCommunityLink);
-
-		switchToNewTab();
-		System.out.println(getTitle());
 		driverClose();
-
-		switchToPreviousWindow();
+		switchToNewTab(parentTabhandle);
+		
+		
+		System.out.println(getTitle());
+		switchToPreviousWindow(parentTabhandle);
 
 	}
 

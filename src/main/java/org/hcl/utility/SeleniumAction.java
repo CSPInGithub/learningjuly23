@@ -22,10 +22,10 @@ public class SeleniumAction {
 		// TODO Auto-generated constructor stub
 	}
 
-	private static String parentTabhandle;
+	
 
-	private static Set<String> allhandles;
-	private static String newTabhandle;
+	private  Set<String> allhandles;
+	
 
 	protected WebElement getElement(By by) {
 		WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
@@ -98,9 +98,11 @@ public class SeleniumAction {
 
 	}
 
-	protected void driverClose() {
+	
+	
+	protected String getPageSource() {
 
-		Driver.getDriver().close();
+		return Driver.getDriver().getPageSource();
 
 	}
 
@@ -203,26 +205,32 @@ public class SeleniumAction {
 
 	}
 
-	protected void switchToNewTab() {
-		parentTabhandle = Driver.driver.getWindowHandle();
+	protected void driverClose() {
 
-		allhandles = Driver.driver.getWindowHandles();
+		Driver.getDriver().close();
+
+	}
+	protected void switchToNewTab(String parenthandle) {
+		
+
+		allhandles = Driver.getDriver().getWindowHandles();
 		for (String handel : allhandles) {
-			newTabhandle = handel;
+			//newTabhandle = handel;
 
-			if (!parentTabhandle.contentEquals(newTabhandle)) {
-				Driver.driver.switchTo().window(newTabhandle);
+			if (!handel.equals(parenthandle)) {
+				Driver.getDriver().switchTo().window(handel);
+				break;
 
 			}
 
 		}
 	}
 
-	protected void switchToPreviousWindow() {
+	protected void switchToPreviousWindow(String parenthandle) {
 
-		Driver.driver.switchTo().window(parentTabhandle);
+		Driver.getDriver().switchTo().window(parenthandle);
 		sleep(2000);
-		Driver.driver.close();
+		driverClose();
 		sleep(2000);
 
 	}

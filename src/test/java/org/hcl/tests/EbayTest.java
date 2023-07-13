@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 public class EbayTest extends BaseTest {
 
-	@Test
+	@Test(groups = {"assignment06"})
 
 	public void verifyAllItemsInPage() {
 		

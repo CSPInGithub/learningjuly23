@@ -15,7 +15,7 @@ public final class Driver {
 
 	}
 
-	public static WebDriver driver;
+	public static  WebDriver driver;
 	private static ThreadLocal<WebDriver> dr = new ThreadLocal<>();
 
 	public static WebDriver getDriver() {
@@ -36,7 +36,7 @@ public final class Driver {
 
 	}
 
-	public static void initDriver(String browser) {
+	public static  void initDriver(String browser) {
 		if (Objects.isNull(getDriver())) {
 
 			switch (browser) {
@@ -51,6 +51,8 @@ public final class Driver {
 				EdgeOptions edgeOption = new EdgeOptions();
 				edgeOption.addArguments("--disable-notifications");
 				edgeOption.addArguments("--ignore-certificate-errors");
+				edgeOption.addArguments("--disable-dev-shm-usage");
+				
 				driver = new EdgeDriver(edgeOption);
 
 				break;
@@ -64,12 +66,12 @@ public final class Driver {
 
 			getDriver().manage().window().maximize();
 			// driver.get(url);
-			getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+			getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		}
 
 	}
 
-	public static void tearDown() {
+	public static  void tearDown() {
 		if (Objects.nonNull(getDriver())) {
 			try {
 				getDriver().close();
