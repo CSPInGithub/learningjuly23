@@ -1,5 +1,7 @@
 package org.hcl.pages;
 
+
+
 import java.util.List;
 
 import org.hcl.driver.Driver;
@@ -82,6 +84,7 @@ public final class AmazonPage extends SeleniumAction {
 		
 		
 		System.out.println(getTitle());
+		driverClose();
 		switchToPreviousWindow(parentTabhandle);
 
 	}

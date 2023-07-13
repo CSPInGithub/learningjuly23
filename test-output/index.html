@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -105,6 +105,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="org.hcl.tests.AmazonAndOtherMiscTest" class="method navigator-link" hash-for-method="multipleWindowCloseByClose">multipleWindowCloseByClose</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.hcl.tests.AmazonAndOtherMiscTest" class="method navigator-link" hash-for-method="selectAnyOptionFromList">selectAnyOptionFromList</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="org.hcl.tests.AmazonAndOtherMiscTest" class="method navigator-link" hash-for-method="validateText">validateText</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -130,6 +140,20 @@
                   <a name="multipleWindowCloseByClose">
                   </a> <!-- multipleWindowCloseByClose -->
                   <span class="method-name">multipleWindowCloseByClose</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectAnyOptionFromList">
+                  </a> <!-- selectAnyOptionFromList -->
+                  <span class="method-name">selectAnyOptionFromList</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateText">
+                  </a> <!-- validateText -->
+                  <span class="method-name">validateText</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,16 +211,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'multipleWindowCloseByClose')
 data.setCell(0, 2, 'org.hcl.tests.AmazonAndOtherMiscTest')
-data.setCell(0, 3, 37424);
+data.setCell(0, 3, 14998);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'selectAnyOptionFromList')
+data.setCell(1, 2, 'org.hcl.tests.AmazonAndOtherMiscTest')
+data.setCell(1, 3, 10509);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateText')
+data.setCell(2, 2, 'org.hcl.tests.AmazonAndOtherMiscTest')
+data.setCell(2, 3, 5089);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 30 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -211,18 +243,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">org.hcl.tests.AmazonAndOtherMiscTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">selectAnyOptionFromList</span>
-                <br/>
-                <span class="ignored-method-name">validateText</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -236,15 +259,37 @@ return data;
                 <span class="method-name">setup(edge)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(edge)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(edge)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateText</span>
+                <span class="method-start">17370 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selectAnyOptionFromList</span>
+                <span class="method-start">17393 ms</span>
+              </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">multipleWindowCloseByClose</span>
-                <span class="method-start">8931 ms</span>
+                <span class="method-start">17541 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">tearDown</span>
-                <span class="method-start">46359 ms</span>
+                <span class="method-start">22466 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">27903 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">32540 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -42,7 +42,7 @@ public final class Driver {
 			switch (browser) {
 			case "chrome":
 				ChromeOptions chromeOption = new ChromeOptions();
-				chromeOption.addArguments("--disable-notifications");
+				//chromeOption.addArguments("--disable-notifications");
 				chromeOption.addArguments("--ignore-certificate-errors");
 				driver = new ChromeDriver(chromeOption);
 
@@ -75,10 +75,10 @@ public final class Driver {
 		if (Objects.nonNull(getDriver())) {
 			try {
 				getDriver().close();
+				getDriver().quit();
 
 			} finally {
-				getDriver().quit();
-				// getDriver() = null;
+				
 				unloaDriver();
 			}
 		}

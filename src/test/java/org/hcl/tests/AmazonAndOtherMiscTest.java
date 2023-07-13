@@ -10,7 +10,7 @@ public final class AmazonAndOtherMiscTest extends BaseTest {
 		// TODO Auto-generated constructor stub
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 
 	public void selectAnyOptionFromList() {
 
@@ -22,7 +22,7 @@ public final class AmazonAndOtherMiscTest extends BaseTest {
 
 	}
 
-	@Test(enabled = false)
+	@Test(enabled = true)
 
 	public void validateText() {
 
