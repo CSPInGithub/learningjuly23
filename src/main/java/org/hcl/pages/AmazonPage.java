@@ -19,7 +19,14 @@ public final class AmazonPage extends SeleniumAction {
 
 	private By actualText = By.cssSelector("div[class='br-cls-div-homepage-logo'] img");
 
-	public void openAmazonHomePage(String url) {
+	private By mxAutotexCenter = By.xpath("//div[@class='mx-auto text-center p-4']/h1");
+
+	private By ElementalSeleiumLink = By.cssSelector("div[style='text-align: center;'] a");
+
+	private By seleniumCommunityLink = By
+			.cssSelector("div[class='row footer__links'] div:nth-of-type(3) ul li:nth-of-type(2) a");
+
+	public void openHomePage(String url) {
 
 		getURL(url);
 
@@ -44,6 +51,29 @@ public final class AmazonPage extends SeleniumAction {
 		}
 
 		return getElement(actualText).getAttribute("alt");
+
+	}
+
+	public String getText() {
+
+		return getElement(mxAutotexCenter).getText();
+
+	}
+
+	public void multipleWindowshandle() {
+		System.out.println(getTitle());
+		click(ElementalSeleiumLink);
+
+		switchToNewTab();
+
+		System.out.println(getTitle());
+		click(seleniumCommunityLink);
+
+		switchToNewTab();
+		System.out.println(getTitle());
+		driverClose();
+
+		switchToPreviousWindow();
 
 	}
 

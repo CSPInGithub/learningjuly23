@@ -4,13 +4,13 @@
   <test thread-count="5" name="Test(failed)">
     <parameter name="browser" value="edge"/>
     <classes>
-      <class name="org.hcl.tests.DropdownMenuCheckboxeRadioButtonTest">
+      <class name="org.hcl.tests.AmazonAndOtherMiscTest">
         <methods>
-          <include name="radioButton"/>
+          <include name="multipleWindowCloseByClose"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- org.hcl.tests.DropdownMenuCheckboxeRadioButtonTest -->
+      </class> <!-- org.hcl.tests.AmazonAndOtherMiscTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

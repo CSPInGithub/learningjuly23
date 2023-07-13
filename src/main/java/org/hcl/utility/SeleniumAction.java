@@ -21,6 +21,11 @@ public class SeleniumAction {
 		// TODO Auto-generated constructor stub
 	}
 
+	private static String parentTabhandle;
+
+	private static Set<String> allhandles;
+	private static String newTabhandle;
+
 	protected WebElement getElement(By by) {
 		WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
 		return wait.until(ExpectedConditions.elementToBeClickable(by));
@@ -30,6 +35,7 @@ public class SeleniumAction {
 	/* overloading within class */
 	protected void click(By by) {
 		getElement(by).click();
+
 	}
 
 	protected String getText(By by) {
@@ -175,16 +181,37 @@ public class SeleniumAction {
 
 	}
 
-	protected void selectWindowTab(int position) {
+	protected void switchToNewTab() {
+		parentTabhandle = Driver.driver.getWindowHandle();
 
-		// String parentTab = Driver.getDriver().getWindowHandle();
+		allhandles = Driver.driver.getWindowHandles();
+		for (String handel : allhandles) {
+			newTabhandle = handel;
 
-		Set<String> handles = Driver.getDriver().getWindowHandles();
+			if (!parentTabhandle.contentEquals(newTabhandle)) {
+				Driver.driver.switchTo().window(newTabhandle);
 
-		String[] myArray = new String[handles.size()];
-		handles.toArray(myArray);
+			}
 
-		Driver.getDriver().switchTo().window(myArray[position]);
+		}
+	}
+
+	protected void switchToPreviousWindow() {
+
+		Driver.driver.switchTo().window(parentTabhandle);
+		sleep(2000);
+		Driver.driver.close();
+		sleep(2000);
+
+	}
+
+	protected void sleep(long i) {
+		try {
+			Thread.sleep(i);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 	}
 }
