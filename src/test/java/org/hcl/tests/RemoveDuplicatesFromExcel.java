@@ -24,24 +24,18 @@ public class RemoveDuplicatesFromExcel {
 	public static void main(String[] args) throws IOException {
 
 		Object[] arrayOfHashMap = getData();
-		Set<Map<String, Object>> uniqueElements = new HashSet<>();
+		Set<Map<?, ?>> uniqueElements = new HashSet<>();
 
-		System.out.println("==============befor removing duplicates=============");
+		System.out.println("==============before removing duplicates=============");
 		for (Object element : arrayOfHashMap) {
 			// Check if the element is a HashMap
-			if (element instanceof HashMap) {
+			if (element instanceof HashMap<?, ?>) {
 				// Extract data from the HashMap
-				Map<String, Object> hashMap = (HashMap<String, Object>) element;
-				System.out.println(hashMap);
-			}
-		}
+				Map<?, ?> hashMap = (HashMap<?, ?>) element;
 
-		// Iterate over the Object[] array
-		for (Object element : arrayOfHashMap) {
-			// Check if the element is a HashMap
-			if (element instanceof HashMap) {
-				// Add the HashMap to the Set (duplicates will be automatically removed)
-				uniqueElements.add((HashMap<String, Object>) element);
+				hashMap.entrySet().stream().forEach(a -> System.out.println(a));
+				hashMap.entrySet().stream().forEach(a -> uniqueElements.add(hashMap));
+
 			}
 		}
 
