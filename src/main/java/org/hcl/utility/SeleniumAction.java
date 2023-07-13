@@ -11,6 +11,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SeleniumAction {
@@ -126,6 +127,27 @@ public class SeleniumAction {
 			break;
 		default:
 			System.out.println("incorrect alertypr provided,pls chek again");
+			break;
+		}
+
+	}
+
+	protected void selectFromDropdown(By by, String dropType, String value) {
+		Select select = new Select(getElement(by));
+		switch (dropType) {
+		case "selectByIndex":
+
+			select.selectByIndex(Integer.parseInt(value));
+
+			break;
+		case "selectByVisibleText":
+			select.selectByVisibleText(value);
+			break;
+		case "confirmationAlert":
+			select.selectByValue(value);
+			break;
+		default:
+			System.out.println("incorrect dropType provided,pls chek again");
 			break;
 		}
 

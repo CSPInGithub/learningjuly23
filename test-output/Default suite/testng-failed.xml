@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.hcl.tests.AmazonAndOtherMiscTest">
+      <class name="org.hcl.tests.EbayTest">
         <methods>
-          <include name="multipleWindowCloseByClose"/>
+          <include name="verifyAllItemsInPage"/>
           <include name="setup"/>
           <include name="tearDown"/>
         </methods>
-      </class> <!-- org.hcl.tests.AmazonAndOtherMiscTest -->
+      </class> <!-- org.hcl.tests.EbayTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
