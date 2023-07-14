@@ -1,70 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-13T19:49:11 IST" name="Suite" finished-at="2023-07-13T19:49:44 IST" duration-ms="33240">
+  <suite started-at="2023-07-14T09:09:54 IST" name="Default suite" finished-at="2023-07-14T09:10:03 IST" duration-ms="8796">
     <groups>
     </groups>
-    <test started-at="2023-07-13T19:49:11 IST" name="Test" finished-at="2023-07-13T19:49:44 IST" duration-ms="33240">
-      <class name="org.hcl.tests.AmazonAndOtherMiscTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.hcl.tests.AmazonAndOtherMiscTest@20ce78ec]" started-at="2023-07-13T19:49:11 IST" name="setup" finished-at="2023-07-13T19:49:28 IST" duration-ms="17393" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2023-07-14T09:09:54 IST" name="Default test" finished-at="2023-07-14T09:10:03 IST" duration-ms="8796">
+      <class name="org.hcl.tests.PagefactorySwagTest">
+        <test-method signature="verifyPagefactory()[pri:0, instance:org.hcl.tests.PagefactorySwagTest@45099dd3]" started-at="2023-07-14T09:09:54 IST" name="verifyPagefactory" finished-at="2023-07-14T09:10:03 IST" duration-ms="8701" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.hcl.tests.AmazonAndOtherMiscTest@20ce78ec]" started-at="2023-07-13T19:49:11 IST" name="setup" finished-at="2023-07-13T19:49:28 IST" duration-ms="17541" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:org.hcl.tests.AmazonAndOtherMiscTest@20ce78ec]" started-at="2023-07-13T19:49:11 IST" name="setup" finished-at="2023-07-13T19:49:28 IST" duration-ms="17369" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validateText()[pri:0, instance:org.hcl.tests.AmazonAndOtherMiscTest@20ce78ec]" started-at="2023-07-13T19:49:28 IST" name="validateText" finished-at="2023-07-13T19:49:33 IST" duration-ms="5089" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateText -->
-        <test-method signature="selectAnyOptionFromList()[pri:0, instance:org.hcl.tests.AmazonAndOtherMiscTest@20ce78ec]" started-at="2023-07-13T19:49:28 IST" name="selectAnyOptionFromList" finished-at="2023-07-13T19:49:39 IST" duration-ms="10509" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- selectAnyOptionFromList -->
-        <test-method signature="multipleWindowCloseByClose()[pri:0, instance:org.hcl.tests.AmazonAndOtherMiscTest@20ce78ec]" started-at="2023-07-13T19:49:28 IST" name="multipleWindowCloseByClose" finished-at="2023-07-13T19:49:43 IST" duration-ms="14998" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- multipleWindowCloseByClose -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.hcl.tests.AmazonAndOtherMiscTest@20ce78ec]" started-at="2023-07-13T19:49:33 IST" name="tearDown" finished-at="2023-07-13T19:49:35 IST" duration-ms="1509" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.hcl.tests.AmazonAndOtherMiscTest@20ce78ec]" started-at="2023-07-13T19:49:39 IST" name="tearDown" finished-at="2023-07-13T19:49:39 IST" duration-ms="668" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.hcl.tests.AmazonAndOtherMiscTest@20ce78ec]" started-at="2023-07-13T19:49:43 IST" name="tearDown" finished-at="2023-07-13T19:49:44 IST" duration-ms="666" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- org.hcl.tests.AmazonAndOtherMiscTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- verifyPagefactory -->
+      </class> <!-- org.hcl.tests.PagefactorySwagTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
